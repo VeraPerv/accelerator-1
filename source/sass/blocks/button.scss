@@ -53,15 +53,18 @@
 
   &--secondary {
     color: $color-primary;
+    background: linear-gradient(151deg, $color-white 13%, $color-white 100%);
     outline: 2px solid $color-primary;
     width: 100%;
     padding: 25px 15px;
     min-height: 62px;
+    transition: outline 0.5s ease-in-out, color 0.5s ease-in-out;
 
     &:hover {
       background: linear-gradient(151deg, #ed0233 13%, #003eb7 100%);
       outline: none;
       color: $color-white;
+      transition: outline 0.5s ease-in-out, color 0.5s ease-in-out, background 0.5s ease-in-out 0.1s;
     }
 
     &:focus,
@@ -69,6 +72,7 @@
       background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
       outline: 2px solid $color-black;
       color: $color-white;
+      transition: outline 0.5s ease-in-out, color 0.5s ease-in-out, background 0.5s ease-in-out 0.1s;
     }
 
     &:active {

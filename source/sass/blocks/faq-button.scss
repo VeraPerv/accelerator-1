@@ -3,7 +3,7 @@
   border: none;
   outline: 1px solid $tab-border;
   outline-offset: -1px;
-  background-color: transparent;
+  background: transparent;
   padding: 15px;
   width: 140px;
   font-family: $font-primary;
@@ -13,11 +13,13 @@
   text-align: center;
   color: $color-primary;
   cursor: pointer;
+  transition: background 0.8s ease, color 0.8s ease;
 
   &--active {
     background: linear-gradient(151deg, #ed0233 13%, #003eb7 100%);
     outline: none;
     color: $color-white;
+    transition: background 0.8s ease, color 0.8s ease;
   }
 
   &:hover {

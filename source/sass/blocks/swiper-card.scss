@@ -19,7 +19,7 @@
     transition: opacity 0.3s ease;
 
     .swiper-card__juri-about {
-      opacity: 1;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
     .swiper-card__name {
@@ -50,8 +50,8 @@
   background-color: rgba(16, 38, 84, 0.89);
   padding: 46px 41px 25px 42px;
   box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: clip-path 0.6s ease;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
 .swiper-card__caption {

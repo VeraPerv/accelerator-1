@@ -3,23 +3,23 @@
   background: $color-white;
   max-width: 290px;
   position: relative;
-  border: 7px solid $color-white;
+  border-width: 7px;
+  border-style: solid;
+  border-image: linear-gradient(136deg, $color-white 0%, $color-white 100%) 1;
+  transition: border-color 0.8s ease;
 
   &:focus-within {
-    border-width: 7px;
-    border-style: solid;
     border-image: linear-gradient(136deg, #d10a42 0%, #00359f 100%) 1;
     transition: border-image 0.8s ease;
   }
 
   &:has(.price-card__button:hover) {
-    border-width: 7px;
-    border-style: solid;
     border-image: linear-gradient(136deg, #d10a42 0%, #00359f 100%) 1;
+    transition: border-image 0.8s ease;
   }
 
   &:has(.price-card__button--disabled:focus) {
-    border: 7px solid $color-white;
+    border-image: linear-gradient(136deg, $color-white 0%, $color-white 100%) 1;
   }
 }
 
